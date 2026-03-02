@@ -1,26 +1,51 @@
-# Heart Disease Prevention
+# ❤️ Heart Disease Risk Predictor
 
-Simple Flask app and trained SVM model to predict heart disease risk from clinical features.
+![Heart Health Dashboard](https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80)
 
-Getting started
+This is a Support Vector Machine (SVM) based machine learning model deployed via a **Streamlit** Python web application. It predicts the probability of heart disease using a patient's medical features.
 
-- Requirements: Python 3.8+ and common data science packages (pandas, scikit-learn, Flask).
-- Run the web app:
+## 🚀 Features
+- **Interactive Web Interface:** Built using Streamlit, allowing users to easily input medical data.
+- **Machine Learning Model:** Uses an SVM classifier trained on the Kaggle Heart Disease dataset, utilizing GridSearchCV for optimal parameter selection.
+- **Risk Assessment:** Provides a clear indication of Heart Disease Risk (Low, Medium, High) along with a probability score.
+- **Data Preprocessing:** Handles missing values and scales numeric features automatically using Scikit-Learn pipelines.
 
-```powershell
-cd heartdisease_codes
-python app.py
-```
+## 📸 Demo Screenshots
 
-Files
-- `app.py`: Flask application to serve predictions.
-- `train_model.py`: training script used to create `heart_svm_model.pkl`.
-- `heart_svm_model.pkl`: trained SVM model.
-- `heart.csv`: sample dataset.
+![Medical Tech](https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80) 
 
-Notes
-- Remove or avoid committing large binary model files if you prefer using Git LFS.
+*(Replace these example images with actual screenshots of your application)*
 
-License
-- Add a license file if you want to make this repo public.
-# Heart-Disease-Prevention
+## 🛠️ Tech Stack
+- **Python** 3.x
+- **Streamlit** (Web Framework)
+- **Scikit-Learn** (Machine Learning Pipeline and SVM model)
+- **Pandas** & **NumPy** (Data Manipulation)
+- **Joblib** (Model Serialization)
+
+## ⚙️ Installation & Usage
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/shivasaiganesh/Heart-Disease-Prevention.git
+   cd Heart-Disease-Prevention
+   ```
+
+2. **Install the dependencies:**
+   ```bash
+   pip install streamlit pandas joblib scikit-learn
+   ```
+
+3. **Run the Model Training (Optional):**
+   *(If you want to retrain the SVM model)*
+   ```bash
+   python train_model.py
+   ```
+
+4. **Launch the Streamlit App:**
+   ```bash
+   streamlit run app.py
+   ```
+
+## ⚠️ Disclaimer
+This application is a demonstration for coursework and research purposes only. **It must NOT be used for real medical diagnosis or treatment.**
